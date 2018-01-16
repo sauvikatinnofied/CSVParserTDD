@@ -13,39 +13,39 @@ class CSVParserTests: XCTestCase {
     // MARK: Out Custom Test Cases will go here
     func testSingleLineParsing() {
         let line = "One,two,three,4" as Substring
-        XCTAssertEqual(parseLine(line: line), ["One","two","three","4"])
+        XCTAssertEqual(parseLine(line), ["One","two","three","4"])
     }
     func testEmptyValueParsing() {
         let line = "One,,two,three,4" as Substring
-        XCTAssertEqual(parseLine(line: line), ["One","","two","three","4"])
+        XCTAssertEqual(parseLine(line), ["One","","two","three","4"])
     }
     
     func testMultilineLineParsing() {
         let paragraph = "One,,two,three\n4,five"
         let expectedResult = [["One","","two","three"], ["4", "five"]] as [[Substring]]
-        let result = parseLines(lines: paragraph)
+        let result = parseLines(paragraph)
         XCTAssertEqual(result.first!, expectedResult.first!, "Multiline Parsing Error")
         XCTAssertEqual(result.last!, expectedResult.last!, "Multiline Parsing Error")
     }
     func testCRMultilineLineParsing() {
         let paragraph = "One,,two,three\r\n4,five"
         let expectedResult = [["One","","two","three"], ["4", "five"]] as [[Substring]]
-        let result = parseLines(lines: paragraph)
+        let result = parseLines(paragraph)
         XCTAssertEqual(result.first!, expectedResult.first!, "Carriage Return Test Failed")
         XCTAssertEqual(result.last!, expectedResult.last!, "Carriage Return Test Failed")
     }
     func testQuoteLineParsing() {
         let paragraph = "One,\"Hi There!\",two,,three\r\n4,five"
         let expectedResult = [["One","\"Hi There!\"","two","","three"], ["4", "five"]] as [[Substring]]
-        let result = parseLines(lines: paragraph)
+        let result = parseLines(paragraph)
         XCTAssertEqual(result.first!, expectedResult.first!, "Quote Test Failed")
         XCTAssertEqual(result.last!, expectedResult.last!, "Quote Test Failed")
     }
     
     func testQuoteWithCommaLineParsing() {
         let paragraph = "One,\"Hi, There!\",two,,three\r\n4,five"
-        let expectedResult = [["One","\"Hi, There\"","two","","three"], ["4", "five"]] as [[Substring]]
-        let result = parseLines(lines: paragraph)
+        let expectedResult = [["One","Hi, There!","two","","three"], ["4", "five"]] as [[Substring]]
+        let result = parseLines(paragraph)
         XCTAssertEqual(result.first!, expectedResult.first!, "Quote with Comma Test Failed")
         XCTAssertEqual(result.last!, expectedResult.last!, "Quote with Comma Test Failed")
     }
