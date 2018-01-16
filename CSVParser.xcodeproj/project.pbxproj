@@ -13,6 +13,8 @@
 		45567E79200DEF5E008F8CBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45567E78200DEF5E008F8CBE /* Assets.xcassets */; };
 		45567E7C200DEF5E008F8CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45567E7A200DEF5E008F8CBE /* LaunchScreen.storyboard */; };
 		45567E87200DEF5E008F8CBE /* CSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45567E86200DEF5E008F8CBE /* CSVParserTests.swift */; };
+		45567E93200DEF90008F8CBE /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45567E92200DEF90008F8CBE /* CSVParser.swift */; };
+		45567E95200DF01A008F8CBE /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45567E92200DEF90008F8CBE /* CSVParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		45567E82200DEF5E008F8CBE /* CSVParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45567E86200DEF5E008F8CBE /* CSVParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParserTests.swift; sourceTree = "<group>"; };
 		45567E88200DEF5E008F8CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45567E92200DEF90008F8CBE /* CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 		45567E65200DEF5E008F8CBE = {
 			isa = PBXGroup;
 			children = (
+				45567E91200DEF87008F8CBE /* Parser */,
 				45567E70200DEF5E008F8CBE /* CSVParser */,
 				45567E85200DEF5E008F8CBE /* CSVParserTests */,
 				45567E6F200DEF5E008F8CBE /* Products */,
@@ -94,6 +98,14 @@
 				45567E88200DEF5E008F8CBE /* Info.plist */,
 			);
 			path = CSVParserTests;
+			sourceTree = "<group>";
+		};
+		45567E91200DEF87008F8CBE /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				45567E92200DEF90008F8CBE /* CSVParser.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +213,7 @@
 			files = (
 				45567E74200DEF5E008F8CBE /* ViewController.swift in Sources */,
 				45567E72200DEF5E008F8CBE /* AppDelegate.swift in Sources */,
+				45567E93200DEF90008F8CBE /* CSVParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45567E87200DEF5E008F8CBE /* CSVParserTests.swift in Sources */,
+				45567E95200DF01A008F8CBE /* CSVParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
