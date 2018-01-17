@@ -7,9 +7,13 @@
 //
 
 import Foundation
-enum ParsingError: Error {
+enum ParsingError: Int, Error, Equatable {
     case quoteNotEnded
     case commaNotFoundAfterQuoteNoEmpty
+    
+    public static func ==(lhs: ParsingError, rhs: ParsingError) -> Bool {
+        return lhs.rawValue == rhs.rawValue
+    }
 }
 extension Substring {
     mutating func parseField() throws -> Substring {
