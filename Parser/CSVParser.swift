@@ -7,9 +7,12 @@
 //
 
 import Foundation
-
+enum ParsingError: Error {
+    case quoteNotEnded
+    case commaNotFoundAfterQuoteNoEmpty
+}
 extension Substring {
-    mutating func parseField() -> Substring {
+    mutating func parseField() throws -> Substring {
         assert(!isEmpty)
         switch self[startIndex] {
         case "\"":
@@ -18,7 +21,7 @@ extension Substring {
             // Lets try to find out the next quote
             guard let nextQuoteIndex = index(of: "\"") else {
                 // Next quote not found
-                fatalError("Misformed CSV") // TODO: Throw error
+                throw ParsingError.quoteNotEnded
             }
             
             let result = prefix(upTo: nextQuoteIndex)
@@ -26,7 +29,7 @@ extension Substring {
             if !isEmpty {
                 // the first char will be a comma and remove it
                 guard removeFirst() == "," else {
-                    fatalError("Misformed CSV") // TODO: Throw error
+                    throw ParsingError.commaNotFoundAfterQuoteNoEmpty
                 }
             }
             return result
@@ -43,27 +46,26 @@ extension Substring {
                 removeAll() // Make this line empty
                 return value
             }
-            
         }
     }
 }
-func parseLine(_ line: Substring) -> [Substring] {
+func parseLine(_ line: Substring) throws -> [Substring] {
     
     var reminder = line
     var result: [Substring] = []
     while !reminder.isEmpty {
-        result.append(reminder.parseField())
+        try result.append(reminder.parseField())
     }
     return result
 }
 
-func parseLines(_ lines: String) -> [[Substring]] {
-    return lines.split(whereSeparator: { char in
+func parseLines(_ lines: String) throws -> [[Substring]] {
+    return try lines.split(whereSeparator: { char in
         switch char {
         case "\n", "\r", "\r\n": return true
         default: return false
         }
     }).map{ line in
-        return parseLine(line as Substring)
+        return try parseLine(line as Substring)
     }
 }

@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32FE8656052497A1D2AA5783 /* Pods_CSVParserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD253FA3835DA85BBC1B69D9 /* Pods_CSVParserTests.framework */; };
+		454DADA9200F1D11000A58DD /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45567E92200DEF90008F8CBE /* CSVParser.swift */; };
+		454DADAD200F2B65000A58DD /* CSVParserTestQuick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454DADAB200F2B65000A58DD /* CSVParserTestQuick.swift */; };
+		454DADAF200F2B8D000A58DD /* CSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454DADAE200F2B8D000A58DD /* CSVParserTests.swift */; };
 		45567E72200DEF5E008F8CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45567E71200DEF5E008F8CBE /* AppDelegate.swift */; };
 		45567E74200DEF5E008F8CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45567E73200DEF5E008F8CBE /* ViewController.swift */; };
 		45567E77200DEF5E008F8CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45567E75200DEF5E008F8CBE /* Main.storyboard */; };
 		45567E79200DEF5E008F8CBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45567E78200DEF5E008F8CBE /* Assets.xcassets */; };
 		45567E7C200DEF5E008F8CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45567E7A200DEF5E008F8CBE /* LaunchScreen.storyboard */; };
-		45567E87200DEF5E008F8CBE /* CSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45567E86200DEF5E008F8CBE /* CSVParserTests.swift */; };
 		45567E93200DEF90008F8CBE /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45567E92200DEF90008F8CBE /* CSVParser.swift */; };
-		45567E95200DF01A008F8CBE /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45567E92200DEF90008F8CBE /* CSVParser.swift */; };
+		C606B01FEAF8468718B8B94B /* Pods_CSVParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24BCA5DCC6205BC1468D90 /* Pods_CSVParser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		45567E83200DEF5E008F8CBE /* PBXContainerItemProxy */ = {
+		454DADA0200F1C8B000A58DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 45567E66200DEF5E008F8CBE /* Project object */;
 			proxyType = 1;
@@ -28,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0407897EF4B2D2470302CDF8 /* Pods-CSVParser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVParser.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSVParser/Pods-CSVParser.release.xcconfig"; sourceTree = "<group>"; };
+		0EAA79079B2AC67BC44BE95A /* Pods-CSVParserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVParserTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSVParserTests/Pods-CSVParserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		454DAD9B200F1C8B000A58DD /* CSVParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		454DAD9F200F1C8B000A58DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454DADAB200F2B65000A58DD /* CSVParserTestQuick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVParserTestQuick.swift; sourceTree = "<group>"; };
+		454DADAE200F2B8D000A58DD /* CSVParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVParserTests.swift; path = ../../../../../.Trash/CSVParserTests.swift; sourceTree = "<group>"; };
 		45567E6E200DEF5E008F8CBE /* CSVParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45567E71200DEF5E008F8CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45567E73200DEF5E008F8CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,37 +44,52 @@
 		45567E78200DEF5E008F8CBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45567E7B200DEF5E008F8CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45567E7D200DEF5E008F8CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45567E82200DEF5E008F8CBE /* CSVParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45567E86200DEF5E008F8CBE /* CSVParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParserTests.swift; sourceTree = "<group>"; };
-		45567E88200DEF5E008F8CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45567E92200DEF90008F8CBE /* CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
+		4E24BCA5DCC6205BC1468D90 /* Pods_CSVParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSVParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D9398B428BF9AE5AF8A95A /* Pods-CSVParserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVParserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSVParserTests/Pods-CSVParserTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A7F2CA334D4316443DA35A1 /* Pods-CSVParser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVParser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSVParser/Pods-CSVParser.debug.xcconfig"; sourceTree = "<group>"; };
+		CD253FA3835DA85BBC1B69D9 /* Pods_CSVParserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSVParserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		454DAD98200F1C8B000A58DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FE8656052497A1D2AA5783 /* Pods_CSVParserTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45567E6B200DEF5E008F8CBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45567E7F200DEF5E008F8CBE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C606B01FEAF8468718B8B94B /* Pods_CSVParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		454DAD9C200F1C8B000A58DD /* CSVParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				454DADAE200F2B8D000A58DD /* CSVParserTests.swift */,
+				454DADAB200F2B65000A58DD /* CSVParserTestQuick.swift */,
+				454DAD9F200F1C8B000A58DD /* Info.plist */,
+			);
+			path = CSVParserTests;
+			sourceTree = "<group>";
+		};
 		45567E65200DEF5E008F8CBE = {
 			isa = PBXGroup;
 			children = (
 				45567E91200DEF87008F8CBE /* Parser */,
 				45567E70200DEF5E008F8CBE /* CSVParser */,
-				45567E85200DEF5E008F8CBE /* CSVParserTests */,
+				454DAD9C200F1C8B000A58DD /* CSVParserTests */,
 				45567E6F200DEF5E008F8CBE /* Products */,
+				DE779AAFF6B72DA5A28841F0 /* Pods */,
+				E44BD2C9C8AE86B42B0A8390 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				45567E6E200DEF5E008F8CBE /* CSVParser.app */,
-				45567E82200DEF5E008F8CBE /* CSVParserTests.xctest */,
+				454DAD9B200F1C8B000A58DD /* CSVParserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,15 +115,6 @@
 			path = CSVParser;
 			sourceTree = "<group>";
 		};
-		45567E85200DEF5E008F8CBE /* CSVParserTests */ = {
-			isa = PBXGroup;
-			children = (
-				45567E86200DEF5E008F8CBE /* CSVParserTests.swift */,
-				45567E88200DEF5E008F8CBE /* Info.plist */,
-			);
-			path = CSVParserTests;
-			sourceTree = "<group>";
-		};
 		45567E91200DEF87008F8CBE /* Parser */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,16 +123,60 @@
 			path = Parser;
 			sourceTree = "<group>";
 		};
+		DE779AAFF6B72DA5A28841F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A7F2CA334D4316443DA35A1 /* Pods-CSVParser.debug.xcconfig */,
+				0407897EF4B2D2470302CDF8 /* Pods-CSVParser.release.xcconfig */,
+				0EAA79079B2AC67BC44BE95A /* Pods-CSVParserTests.debug.xcconfig */,
+				95D9398B428BF9AE5AF8A95A /* Pods-CSVParserTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E44BD2C9C8AE86B42B0A8390 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BCA5DCC6205BC1468D90 /* Pods_CSVParser.framework */,
+				CD253FA3835DA85BBC1B69D9 /* Pods_CSVParserTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		454DAD9A200F1C8B000A58DD /* CSVParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454DADA2200F1C8B000A58DD /* Build configuration list for PBXNativeTarget "CSVParserTests" */;
+			buildPhases = (
+				0AB0F3049F72330ACC177963 /* [CP] Check Pods Manifest.lock */,
+				454DAD97200F1C8B000A58DD /* Sources */,
+				454DAD98200F1C8B000A58DD /* Frameworks */,
+				454DAD99200F1C8B000A58DD /* Resources */,
+				F92BE8E94BF8C7704E0988A0 /* [CP] Embed Pods Frameworks */,
+				2B272FED35223D2B1B420E7B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				454DADA1200F1C8B000A58DD /* PBXTargetDependency */,
+			);
+			name = CSVParserTests;
+			productName = CSVParserTests;
+			productReference = 454DAD9B200F1C8B000A58DD /* CSVParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		45567E6D200DEF5E008F8CBE /* CSVParser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45567E8B200DEF5E008F8CBE /* Build configuration list for PBXNativeTarget "CSVParser" */;
 			buildPhases = (
+				A6C7560D03B69142CB8BC733 /* [CP] Check Pods Manifest.lock */,
 				45567E6A200DEF5E008F8CBE /* Sources */,
 				45567E6B200DEF5E008F8CBE /* Frameworks */,
 				45567E6C200DEF5E008F8CBE /* Resources */,
+				3D241D179420ECBFEDB57CAF /* [CP] Embed Pods Frameworks */,
+				C808F1D08889083E45E4D05A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,24 +186,6 @@
 			productName = CSVParser;
 			productReference = 45567E6E200DEF5E008F8CBE /* CSVParser.app */;
 			productType = "com.apple.product-type.application";
-		};
-		45567E81200DEF5E008F8CBE /* CSVParserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45567E8E200DEF5E008F8CBE /* Build configuration list for PBXNativeTarget "CSVParserTests" */;
-			buildPhases = (
-				45567E7E200DEF5E008F8CBE /* Sources */,
-				45567E7F200DEF5E008F8CBE /* Frameworks */,
-				45567E80200DEF5E008F8CBE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				45567E84200DEF5E008F8CBE /* PBXTargetDependency */,
-			);
-			name = CSVParserTests;
-			productName = CSVParserTests;
-			productReference = 45567E82200DEF5E008F8CBE /* CSVParserTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -156,14 +197,15 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Innofied Solution Pvt. Ltd.";
 				TargetAttributes = {
+					454DAD9A200F1C8B000A58DD = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45567E6D200DEF5E008F8CBE;
+					};
 					45567E6D200DEF5E008F8CBE = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					45567E81200DEF5E008F8CBE = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 45567E6D200DEF5E008F8CBE;
 					};
 				};
 			};
@@ -181,12 +223,19 @@
 			projectRoot = "";
 			targets = (
 				45567E6D200DEF5E008F8CBE /* CSVParser */,
-				45567E81200DEF5E008F8CBE /* CSVParserTests */,
+				454DAD9A200F1C8B000A58DD /* CSVParserTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		454DAD99200F1C8B000A58DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45567E6C200DEF5E008F8CBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,16 +246,123 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45567E80200DEF5E008F8CBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AB0F3049F72330ACC177963 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CSVParserTests-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		2B272FED35223D2B1B420E7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSVParserTests/Pods-CSVParserTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D241D179420ECBFEDB57CAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSVParser/Pods-CSVParser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6C7560D03B69142CB8BC733 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CSVParser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C808F1D08889083E45E4D05A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSVParser/Pods-CSVParser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F92BE8E94BF8C7704E0988A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CSVParserTests/Pods-CSVParserTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSVParserTests/Pods-CSVParserTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		454DAD97200F1C8B000A58DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454DADA9200F1D11000A58DD /* CSVParser.swift in Sources */,
+				454DADAD200F2B65000A58DD /* CSVParserTestQuick.swift in Sources */,
+				454DADAF200F2B8D000A58DD /* CSVParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45567E6A200DEF5E008F8CBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,22 +373,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45567E7E200DEF5E008F8CBE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45567E87200DEF5E008F8CBE /* CSVParserTests.swift in Sources */,
-				45567E95200DF01A008F8CBE /* CSVParser.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		45567E84200DEF5E008F8CBE /* PBXTargetDependency */ = {
+		454DADA1200F1C8B000A58DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 45567E6D200DEF5E008F8CBE /* CSVParser */;
-			targetProxy = 45567E83200DEF5E008F8CBE /* PBXContainerItemProxy */;
+			targetProxy = 454DADA0200F1C8B000A58DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -256,6 +403,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		454DADA3200F1C8B000A58DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EAA79079B2AC67BC44BE95A /* Pods-CSVParserTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9STZT28MB5;
+				INFOPLIST_FILE = CSVParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.CSVParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSVParser.app/CSVParser";
+			};
+			name = Debug;
+		};
+		454DADA4200F1C8B000A58DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D9398B428BF9AE5AF8A95A /* Pods-CSVParserTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9STZT28MB5;
+				INFOPLIST_FILE = CSVParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.CSVParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSVParser.app/CSVParser";
+			};
+			name = Release;
+		};
 		45567E89200DEF5E008F8CBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,6 +549,7 @@
 		};
 		45567E8C200DEF5E008F8CBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A7F2CA334D4316443DA35A1 /* Pods-CSVParser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +565,7 @@
 		};
 		45567E8D200DEF5E008F8CBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0407897EF4B2D2470302CDF8 /* Pods-CSVParser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -393,43 +579,18 @@
 			};
 			name = Release;
 		};
-		45567E8F200DEF5E008F8CBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9STZT28MB5;
-				INFOPLIST_FILE = CSVParserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.CSVParserTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSVParser.app/CSVParser";
-			};
-			name = Debug;
-		};
-		45567E90200DEF5E008F8CBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9STZT28MB5;
-				INFOPLIST_FILE = CSVParserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.CSVParserTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSVParser.app/CSVParser";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		454DADA2200F1C8B000A58DD /* Build configuration list for PBXNativeTarget "CSVParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454DADA3200F1C8B000A58DD /* Debug */,
+				454DADA4200F1C8B000A58DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		45567E69200DEF5E008F8CBE /* Build configuration list for PBXProject "CSVParser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -444,15 +605,6 @@
 			buildConfigurations = (
 				45567E8C200DEF5E008F8CBE /* Debug */,
 				45567E8D200DEF5E008F8CBE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		45567E8E200DEF5E008F8CBE /* Build configuration list for PBXNativeTarget "CSVParserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45567E8F200DEF5E008F8CBE /* Debug */,
-				45567E90200DEF5E008F8CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
